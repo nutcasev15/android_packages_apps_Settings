@@ -7913,24 +7913,26 @@
     <!-- Warning when activating the automatic storage manager on legacy devices. [CHAR LIMIT=NONE] -->
     <string name="automatic_storage_manager_activation_warning">Your storage is now being managed by the storage manager</string>
 
-    <!-- XOSP Blur personalizations -->
-    <string name="blurred_status_bar_expanded_enabled_pref">Blur StatusBar Background</string>
-    <string name="blurred_status_bar_expanded_enabled_pref_summary">Blur the background when you pull down the status bar</string>
+<!-- XOSP Blur personalizations -->
+	<string name="blurred_status_bar_expanded_enabled_pref">Blurred Expanded StatusBar</string>
+    <string name="blurred_status_bar_expanded_enabled_pref_summary">Blur the StatusBar background when pulled down</string>
     <string name="translucent_notifications_pref">Translucent Notifications</string>
     <string name="translucent_notifications_pref_summary">Set the background of notifications translucent</string>
-    <string name="translucent_quick_settings_pref">Blurred Expanded StatusBar</string>
-    <string name="translucent_quick_settings_pref_summary">Blur the background of expanded status bar </string>
-    <string name="transluency_level_universal">Transluency level</string>
-    <string name="blurred_recent_app_enabled_pref">Blurred Recent Apps</string>
-    <string name="blurred_recent_app_enabled_pref_summary">Blur the background of Recent Apps activity</string>
+   	<string name="translucent_quick_settings_pref">Blurred QS </string>
+    <string name="translucent_quick_settings_pref_summary">Blur the StatusBar QS background</string>
+    <string name="transluency_level_universal">Translucency level</string>
+    <string name="blurred_recent_app_enabled_pref">Blurred RecentsApps View</string>
+    <string name="blurred_recent_app_enabled_pref_summary">Blur the background of RecentApps View</string>
 
     <string name="blur_expstatus_cat">Expanded StatusBar </string>
     <string name="blur_notifications_cat">Notifications</string>
     <string name="blur_qs_cat">Quick Settings</string>
-    <string name="blur_recents_cat">Recent Apps</string> 
+    <string name="blur_recents_cat">RecentApps</string>  
+    <string name="blur_colors_cat">Blur Color Filters</string>
+    <string name="blur_notices_cat">Notices</string>
 
     <string name="blurred_scale">Blur Scale</string>
-    <string name="blurred_scale_summary">Quailty of blur image</string>
+    <string name="blurred_scale_summary">Quality of blur image</string>
 
     <string name="blurred_radius">Blur Radius</string>
     <string name="blurred_radius_summary">Amount of blur</string>
