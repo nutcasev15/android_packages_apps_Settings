@@ -7912,6 +7912,12 @@
 
     <!-- Warning when activating the automatic storage manager on legacy devices. [CHAR LIMIT=NONE] -->
     <string name="automatic_storage_manager_activation_warning">Your storage is now being managed by the storage manager</string>
+<!-- RR Charging Headsup -->
+    <string name="heads_up_settings">Heads Up</string>
+
+    <!-- Lockscreen charging current indicator  -->
+    <string name="lockscreen_charging_current_title">Lockscreen charging info</string>
+    <string name="lockscreen_charging_current_summary">Display adjusted charger max current and voltage on lockscreen</string>
 
 <!-- XOSP Blur personalizations -->
     <string name="display_settings_blur_cat">Blur Control</string>
