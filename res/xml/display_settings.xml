@@ -163,5 +163,23 @@
                 android:title="@string/heads_up_switch_title"
                 android:summary="@string/heads_up_switch_summary"
                 android:defaultValue="true" />
+        <PreferenceScreen
+                xmlns:android="http://schemas.android.com/apk/res/android"
+  	        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+   	        android:title="@string/ls_ui" >
+
+     	        <com.android.settings.SystemSettingSwitchPreference
+                android:key="lockscreen_charging_current"
+                android:title="@string/lockscreen_charging_current_title"
+                android:summary="@string/lockscreen_charging_current_summary"
+                android:defaultValue="true" />
+
+		</PreferenceScreen>
+
+<PreferenceScreen
+            android:key="heads_up_settings"
+            android:title="@string/heads_up_settings"
+            android:icon="@drawable/heads_up_icon"
+            android:fragment="com.android.settings.Headsup" />
     </PreferenceCategory>
 </PreferenceScreen>
