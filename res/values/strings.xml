@@ -7917,4 +7917,9 @@
 
     <!-- Warning when activating the automatic storage manager on legacy devices. [CHAR LIMIT=NONE] -->
     <string name="automatic_storage_manager_activation_warning">Your storage is now being managed by the storage manager</string>
+
+<!-- Superuser indicator on status bar -->
+    <string name="su_indicator">Superuser Indicator</string>
+    <string name="su_indicator_summary_on">Superuser indicator is visible when a session is active</string>
+    <string name="su_indicator_summary_off">Toggle to show superuser indicator when a session is active</string>
 </resources>
