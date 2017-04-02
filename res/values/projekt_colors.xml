@@ -71,4 +71,7 @@
     <color name="text_color_black">@android:color/black</color>
     <color name="text_color_white">@android:color/white</color>
     <color name="background_color_white">@android:color/white</color>
+
+    <!-- Gesture settings switchbar background -->
+    <color name="gestures_switchbar_color">@android:color/white</color>
 </resources>
