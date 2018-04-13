@@ -229,6 +229,8 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
 
     private static final String TERMINAL_APP_PACKAGE = "com.android.terminal";
 
+    private static final String DEVELOPMENT_APP_PACKAGE = "com.android.developement";
+
     private static final String KEY_CONVERT_FBE = "convert_to_file_encryption";
 
     private static final String OTA_DISABLE_AUTOMATIC_UPDATE_KEY = "ota_disable_automatic_update";
@@ -398,7 +400,11 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             return;
         }
 
-        addPreferencesFromResource(R.xml.development_prefs);
+        if (isPackageInstalled(getActivity(), DEVELOPMENT_APP_PACKAGE)) {
+            addPreferencesFromResource(R.xml.development_prefs);
+        } else {
+            addPreferencesFromResource(R.xml.development_prefs_no_dev_app);
+        }
 
         final PreferenceGroup debugDebuggingCategory = (PreferenceGroup)
                 findPreference(DEBUG_DEBUGGING_CATEGORY_KEY);
@@ -588,8 +594,12 @@ public class DevelopmentSettings extends RestrictedSettingsFragment
             }
         }
 
-        mDevelopmentTools = (PreferenceScreen) findPreference(DEVELOPMENT_TOOLS);
-        mAllPrefs.add(mDevelopmentTools);
+        if (isPackageInstalled(getActivity(), DEVELOPMENT_APP_PACKAGE)) {
+            mDevelopmentTools = (PreferenceScreen) findPreference(DEVELOPMENT_TOOLS);
+            mAllPrefs.add(mDevelopmentTools);
+        } else {
+            mDevelopmentTools = null;
+        }
     }
 
     private ListPreference addListPreference(String prefKey) {
